@@ -29,6 +29,14 @@ html {
     justify-content: space-around;
 }
 
+.m-t {
+    margin-top: 40px;
+}
+
+.m-b {
+    margin-bottom: 40px;
+}
+
 .nav-flex {
     display: flex;
     justify-content: space-around;
@@ -75,5 +83,13 @@ html {
     margin-top: 20px;
     width: 200px;
     height: 200px;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 1.5rem;
 }
 
