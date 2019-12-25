@@ -27,20 +27,17 @@ function randomRGB() {
 }
 
 for (i = 0; i < squares.length; i++) {
-    squares[i].style.background = randomRGB();
-}
+    squares[i].style.backgroundColor = randomRGB();
 
-for (i = 0; i < squares.length; i++) {
     if (i === randomNum) {
-        squares[i].style.background = rgb;
+        squares[i].style.backgroundColor = rgb;
     }
 }
 
 
-
 squares.forEach(el => {
     el.addEventListener("click", () => {
-        if (el.style.background === rgb) {
+        if (el.style.backgroundColor === rgb) {
             changeColorOfBoxes(rgb);
         }
         else {
@@ -54,8 +51,8 @@ squares.forEach(el => {
 const changeColorOfBoxes = e => {
     squares.forEach(el => {
         el.style.visibility = 'visible';
-        el.style.background = e;
-        jumbotron.style.background = e;
+        el.style.backgroundColor = e;
+        jumbotron.style.backgroundColor = e;
         tryAgain.innerHTML = "Correct!";
         newColor.innerHTML = "Play Again?"
     });
@@ -64,7 +61,7 @@ const changeColorOfBoxes = e => {
 const easyMode = () => {
     let counter = 0;
     for (let i = 0; i < squares.length; i++) {
-        if (squares[i].style.background !== rgb) {
+        if (squares[i].style.backgroundColor !== rgb) {
             squares[i].style.display = 'none';
             counter++;
         }

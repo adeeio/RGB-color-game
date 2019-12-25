@@ -4,25 +4,13 @@
   margin: 0;
   padding: 0; }
 
-html {
-  width: 100%; }
-
 .container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px; }
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: auto; }
 
-.container {
-  text-align: center;
-  padding-top: 150px;
-  padding-bottom: 150px; }
-
-.flex-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around; }
+.text-center {
+  text-align: center; }
 
 .m-t {
   margin-top: 40px; }
@@ -46,6 +34,9 @@ html {
 .bg-dark {
   background: black; }
 
+.bg-whitish {
+  background: #f5f5f5; }
+
 .font-white {
   color: #ffffff; }
 
@@ -62,12 +53,17 @@ html {
 /* square blocks */
 .square {
   border-radius: 10px;
-  margin-top: 20px;
-  width: 200px;
-  height: 200px; }
+  margin: 1.66%;
+  width: 30%;
+  padding-bottom: 30%;
+  float: left; }
+
+h1 {
+  font-size: 3rem; }
 
 h3 {
-  font-size: 3rem; }
+  font-size: 3rem;
+  font-weight: 300; }
 
 h4 {
   font-size: 1.5rem; }
