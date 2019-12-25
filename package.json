@@ -1,0 +1,21 @@
+{
+  "name": "colorGame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "colorGame.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npx npm-run-all -p watch:*",
+    "watch:browsersync": "browser-sync start --server --files css/*.css, *.html",
+    "watch:sass": "node-sass --watch sass --output css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "node-sass": "^4.13.0",
+    "save-dev": "0.0.1-security"
+  },
+  "devDependencies": {}
+}
