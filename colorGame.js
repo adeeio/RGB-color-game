@@ -21,7 +21,7 @@ function randomRGB() {
     var g = Math.floor(Math.random() * 256);
     var b = Math.floor(Math.random() * 256);
 
-    var rgb = "rgb" + "(" + r + ", " + g + ", " + b + ")";
+    var rgb = "rgb(" + r + ", " + g + ", " + b + ")";
 
     return rgb;
 }
