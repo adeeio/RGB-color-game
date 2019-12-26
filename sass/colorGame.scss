@@ -98,12 +98,17 @@ button {
     height: auto;
     width: 70px;
     &:hover{
-        background: rgba(0, 0, 220, 0.5);
-        border: rgba(0, 0, 220, 0.5);
+        background: blue;
+        border-color: blue;
     }
 }
 
 .stripe {
     height: 40px;
     display: flex;
+}
+
+.selected {
+    background: blue;
+    border-color: blue;
 }

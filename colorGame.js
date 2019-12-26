@@ -59,6 +59,8 @@ const changeColorOfBoxes = e => {
 }
 
 const easyMode = () => {
+    easy.classList.add("selected");
+    hard.classList.remove('selected');
     let counter = 0;
     for (let i = 0; i < squares.length; i++) {
         if (squares[i].style.backgroundColor !== rgb) {
@@ -72,12 +74,18 @@ const easyMode = () => {
     }
 }
 const hardMode = () => {
+    hard.classList.add("selected");
+    easy.classList.remove('selected');
     for (let i = 0; i < squares.length; i++) {
         squares[i].style.display = 'inline-block';
     }
 }
 
 newColor.addEventListener('click', () => document.location.reload(true));
+
+
+
+
 easy.addEventListener('click', easyMode);
 hard.addEventListener('click', hardMode);
 
