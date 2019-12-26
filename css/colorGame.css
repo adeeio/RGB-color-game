@@ -25,9 +25,6 @@
 .nav:hover {
   cursor: pointer; }
 
-#easy:focus, #easy:active, #hard:focus, #hard:active {
-  background: blue; }
-
 .bg-blue {
   background: #3C76AE; }
 
@@ -74,10 +71,13 @@ h4 {
 
 button {
   height: auto;
-  width: 70px; }
+  width: 70px;
+  font-weight: 600;
+  transition: all 0.3s; }
   button:hover {
     background: blue;
-    border-color: blue; }
+    border-color: blue;
+    color: white; }
 
 .stripe {
   height: 40px;
