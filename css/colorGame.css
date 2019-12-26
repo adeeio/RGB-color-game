@@ -72,6 +72,7 @@ h4 {
 button {
   height: auto;
   width: 70px;
+  color: blue;
   font-weight: 600;
   transition: all 0.3s; }
   button:hover {
@@ -85,4 +86,5 @@ button {
 
 .selected {
   background: blue;
-  border-color: blue; }
+  border-color: blue;
+  color: white; }
